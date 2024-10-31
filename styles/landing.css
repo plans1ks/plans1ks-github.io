@@ -1,11 +1,9 @@
-/* Скидання стандартних стилів */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Загальні стилі */
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
@@ -14,8 +12,6 @@ body {
     height: auto;
 }
 
-
-/* Навігаційне меню */
 header {
     background-color: #ff9178;
     color: #fff;
@@ -178,7 +174,7 @@ nav ul li a:hover {
 .footer a:hover {
     color: #fff;
 }
-/* Стиль для всплывающего окна логина */
+
 .popup-overlay {
     position: fixed;
     top: 0;
@@ -201,7 +197,6 @@ nav ul li a:hover {
     display: none;
 }
 
-/* Адаптація для мобільних пристроїв */
 @media (max-width: 768px) {
     header {
         height: 180px;
