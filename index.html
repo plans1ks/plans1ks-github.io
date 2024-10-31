@@ -28,53 +28,43 @@
                 <img src="images/margherita.png" alt="margherita" class="popularpizza">
                 <h3>Піца Маргарита</h3>
                 <p>Ціна: 200 грн</p>
-                <button class="order-button" onclick="showLoginPopup()">Замовити</button>
+                <button class="order-button">Замовити</button>
             </article>
             <article>
                 <img src="images/pepperoni.png" alt="pepperoni" class="popularpizza">
                 <h3>Піца Пепероні</h3>
                 <p>Ціна: 190 грн</p>
-                <button class="order-button" onclick="showLoginPopup()">Замовити</button>
+                <button class="order-button">Замовити</button>
             </article>
             <article>
                 <img src="images/4cheese.png" alt="4cheese" class="popularpizza">
                 <h3>Піца 4 Сири</h3>
                 <p>Ціна: 210 грн</p>
-                <button class="order-button" onclick="showLoginPopup()">Замовити</button>
+                <button class="order-button">Замовити</button>
             </article>
             <article>
                 <img src="images/hawaiian.png" alt="hawaiian" class="popularpizza">
                 <h3>Піца Гавайська</h3>
                 <p>Ціна: 210 грн</p>
-                <button class="order-button" onclick="showLoginPopup()">Замовити</button>
+                <button class="order-button">Замовити</button>
             </article>
             <article>
                 <img src="images/meat.png" alt="meat" class="popularpizza">
                 <h3>Піца М'ясна</h3>
                 <p>Ціна:230 грн</p>
-                <button class="order-button" onclick="showLoginPopup()">Замовити</button>
+                <button class="order-button">Замовити</button>
             </article>
             <article>
                 <img src="images/veggie.png" alt="veggie" class="popularpizza">    
                 <h3>Піца Вегетаріанська</h3>
                 <p>Ціна:180 грн</p>
-                <button class="order-button" onclick="showLoginPopup()">Замовити</button>
+                <button class="order-button">Замовити</button>
             </article>
         </div>
-        <div class="popup-overlay" id="popupOverlay" onclick="closeLoginPopup()"></div>
-        <div class="popup" id="loginPopup">
-            <h3>Вхід в особистий кабінет</h3><br>
-            <label for="login">Login <input type="text"></label><br>
-            <label for="password">Password <input type="password"></label><br>
-            <label for="remeberme">Remember me <input type="checkbox"></label><br>
-            <p>Будь ласка, увійдіть, щоб зробити замовлення</p><br>
-            <button class="order-button" onclick="closeLoginPopup()">Закрити</button>
-        </div>
-    
     </section>
     <section class="about">
         <h3>Контакти</h3>
-        <p>Телефон: +38 (068) 526 31 50</p>
+        <p>Телефон: +38 (000) 123 45 67</p>
         <p>Адреса: Ужгород, вул. Університетська, 12</p>
     </section>
 
@@ -85,5 +75,16 @@
             <a href="https://www.instagram.com">Instagram</a>
         </div>
     </div>
+    <div class="popup-overlay" id="popupOverlay" onclick="closeLoginPopup()"></div>
+<div class="popup" id="loginPopup">
+    <h3>Вхід в особистий кабінет</h3>
+    <label for="login">Login: <input type="text" id="login"></label><br>
+    <label for="password">Password: <input type="password" id="password"></label><br>
+    <label for="rememberme">Remember me: <input type="checkbox" id="rememberme"></label><br>
+    <p>Будь ласка, увійдіть, щоб зробити замовлення</p><br>
+    <button onclick="closeLoginPopup()">Вхід</button>
+    <button onclick="closeLoginPopup()">Закрити</button>
+</div>
+
 </body>
 </html>
