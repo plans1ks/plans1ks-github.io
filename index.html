@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/landing.css">
+    <link rel="icon" href="images/landing.ico">
+    <script src="scripts/landing.js"></script>
+    <title>PizzaOnline</title>
+</head>
+<body>
+    <header>
+        <h1>PizzaOnline</h1>
+        <img src="images/logo.png" alt="Pizza Logo">
+        <nav>
+            <ul>
+                <li><a href="pages/menu.html">Меню</a></li>
+                <li><a href="pages/about.html">Про нас</a></li>
+                <li><a href="pages/account.html">Особистий кабінет</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="popular" id="popular">
+        <h2>Популярні страви</h2>
+        <div>
+            <article>
+                <img src="images/margherita.png" alt="margherita" class="popularpizza">
+                <h3>Піца Маргарита</h3>
+                <p>Ціна: 200 грн</p>
+                <button class="order-button">Замовити</button>
+            </article>
+            <article>
+                <img src="images/pepperoni.png" alt="pepperoni" class="popularpizza">
+                <h3>Піца Пепероні</h3>
+                <p>Ціна: 190 грн</p>
+                <button class="order-button">Замовити</button>
+            </article>
+            <article>
+                <img src="images/4cheese.png" alt="4cheese" class="popularpizza">
+                <h3>Піца 4 Сири</h3>
+                <p>Ціна: 210 грн</p>
+                <button class="order-button">Замовити</button>
+            </article>
+            <article>
+                <img src="images/hawaiian.png" alt="hawaiian" class="popularpizza">
+                <h3>Піца Гавайська</h3>
+                <p>Ціна: 210 грн</p>
+                <button class="order-button">Замовити</button>
+            </article>
+            <article>
+                <img src="images/meat.png" alt="meat" class="popularpizza">
+                <h3>Піца М'ясна</h3>
+                <p>Ціна:230 грн</p>
+                <button class="order-button">Замовити</button>
+            </article>
+            <article>
+                <img src="images/veggie.png" alt="veggie" class="popularpizza">    
+                <h3>Піца Вегетаріанська</h3>
+                <p>Ціна:180 грн</p>
+                <button class="order-button">Замовити</button>
+            </article>
+        </div>
+    </section>
+    <section class="about">
+        <h3>Контакти</h3>
+        <p>Телефон: +38 (000) 123 45 67</p>
+        <p>Адреса: Ужгород, вул. Університетська</p>
+    </section>
+
+    <div class="footer">
+        <p>&copy; 2024 Піцерія. Всі права захищено.</p>
+        <div>
+            <a href="https://www.facebook.com">Facebook</a>
+            <a href="https://www.instagram.com">Instagram</a>
+        </div>
+    </div>
+    <div class="popup-overlay" id="popupOverlay" onclick="closeLoginPopup()"></div>
+<div class="popup" id="loginPopup">
+    <h3>Вхід в особистий кабінет</h3>
+    <label for="login">Login: <input type="text" id="login"></label><br>
+    <label for="password">Password: <input type="password" id="password"></label><br>
+    <label for="rememberme">Remember me: <input type="checkbox" id="rememberme"></label><br>
+    <p>Будь ласка, увійдіть, щоб зробити замовлення</p><br>
+    <button onclick="closeLoginPopup()">Вхід</button>
+    <button onclick="closeLoginPopup()">Закрити</button>
+</div>
+
+</body>
+</html>
